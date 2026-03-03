@@ -1,4 +1,4 @@
-# 🚦 Tokyo Multi-Intersection Deep RL Traffic Intelligence
+# 🚦 Wide Scale Multi-Intersection Deep RL Traffic Intelligence
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![Tkinter](https://img.shields.io/badge/Tkinter-GUI-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-*A 3×3 grid of intersections controlled by a live-training DQN agent, with TensorBoard logging, congestion color mapping, and a separate analytics pipeline that generates publication-quality comparison plots.*
+*A 3×3 grid of intersections controlled by a live training DQN agent, with TensorBoard logging, congestion color mapping, and a separate analytics pipeline that generates publication quality comparison plots.*
 
 </div>
 
@@ -16,7 +16,7 @@
 
 ## What This Does
 
-Nine intersections arranged in a 3×3 grid. Each one has four lanes with Poisson-distributed vehicle arrivals. Three control modes run in the same codebase — Fixed, Density, and DQN — and you switch between them by changing one line. The DQN agent trains live during the simulation, updates a target network every 100 steps, and logs everything to TensorBoard. A second script reads those logs and produces bar charts and a radar plot comparing all three modes.
+Nine intersections arranged in a 3×3 grid. Each one has four lanes with Poisson-distributed vehicle arrivals. Three control modes run in the same codebase: Fixed, Density, and DQN where you switch between them by changing one line. The DQN agent trains live during the simulation, updates a target network every 100 steps, and logs everything to TensorBoard. A second script reads those logs and produces bar charts and a radar plot comparing all three modes.
 
 The trained policy network gets exported as a TorchScript traced model (`traffic_dqn.pt`) at the end of each run.
 
@@ -124,7 +124,7 @@ elite_plots.py
 | Density | 21.6 vehicles | 8.11 veh/cycle |
 | DQN | **0.8 vehicles** | **8.20 veh/cycle** |
 
-DQN eliminates congestion almost entirely while throughput stays equal — the agent learns to serve lanes efficiently rather than just rotating or picking the longest queue.
+DQN eliminates congestion almost entirely while throughput stays equal. The agent learns to serve lanes efficiently rather than just rotating or picking the longest queue.
 
 ---
 
