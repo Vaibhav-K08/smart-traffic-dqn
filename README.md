@@ -1,4 +1,4 @@
-# 🚦 Wide Scale Multi-Intersection Deep RL Traffic Intelligence
+# 🚦 Multi-Intersection Deep RL Traffic Signal Controller
 
 <div align="center">
 
