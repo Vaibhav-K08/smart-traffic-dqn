@@ -16,7 +16,7 @@
 
 ## What This Does
 
-Nine intersections arranged in a 3×3 grid. Each one has four lanes with Poisson-distributed vehicle arrivals. Three control modes run in the same codebase: Fixed, Density, and DQN where you switch between them by changing one line. The DQN agent trains live during the simulation, updates a target network every 100 steps, and logs everything to TensorBoard. A second script reads those logs and produces bar charts and a radar plot comparing all three modes.
+Nine intersections arranged in a 3×3 grid. Each one has four lanes with Poisson distributed vehicle arrivals. Three control modes run in the same codebase: Fixed, Density, and DQN where you switch between them by changing one line. The DQN agent trains live during the simulation, updates a target network every 100 steps, and logs everything to TensorBoard. A second script reads those logs and produces bar charts and a radar plot comparing all three modes.
 
 The trained policy network gets exported as a TorchScript traced model (`traffic_dqn.pt`) at the end of each run.
 
@@ -77,9 +77,9 @@ Success is counted when average queue across all intersections drops below 15 ve
 
 ## Visualization
 
-**Tkinter grid** — each intersection is drawn as a colored square. Color shifts from blue to red as congestion increases (0% to 100% of a normalized scale). Four signal dots per intersection show which lane is currently green. Total queue count is displayed at the center of each node.
+**Tkinter grid**: Each intersection is drawn as a colored square. Color shifts from blue to red as congestion increases (0% to 100% of a normalized scale). Four signal dots per intersection show which lane is currently green. Total queue count is displayed at the center of each node.
 
-**Metrics overlay** — live labels in the top left show Step Reward, Episode Reward, Average Reward (last 20 episodes), Success Rate, and current Epsilon.
+**Metrics overlay**: Live labels in the top left show Step Reward, Episode Reward, Average Reward (last 20 episodes), Success Rate, and current Epsilon.
 
 ---
 
@@ -133,9 +133,9 @@ DQN eliminates congestion almost entirely while throughput stays equal. The agen
 - 3×3 multi-intersection grid, all nodes simulated simultaneously
 - Three control modes in one codebase, switchable with one variable
 - Live training DQN with replay memory and target network
-- TensorBoard logging — loss, queue, throughput, epsilon, rewards, success rate
+- TensorBoard logging: loss, queue, throughput, epsilon, rewards, success rate
 - Tkinter canvas with congestion color mapping per intersection
-- Separate analytics script generates publication-quality comparison plots
+- Separate analytics script generates publication quality comparison plots
 - Policy exported as TorchScript traced model at end of run
 
 ---
