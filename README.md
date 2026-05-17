@@ -380,6 +380,6 @@ Click **Run Benchmark Suite** to trigger the automated FIXED → DENSITY → DQN
 
 **Vaibhav Krishna V**  
 Electronics and Communication Engineer
-[GitHub](https://github.com/vaibhavkrishnav) · [LinkedIn](https://linkedin.com/in/vaibhavkrishnav)
+[GitHub](https://github.com/vaibhav-krishna-v ) · [LinkedIn](https://linkedin.com/in/vkv078)
 
 > *Built on the conviction that adaptive control systems earn their value not by outperforming a weak baseline in a controlled test, but by remaining quantifiably better than deterministic alternatives under every traffic condition the city actually produces.*
